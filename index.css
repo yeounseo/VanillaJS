@@ -15,9 +15,16 @@ body {
     color: #7f8c8d;
 }
 
+
 .form,
 .greetings {
     display: none;
+}
+
+.js-greetings {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
 }
 
 .showing {
@@ -42,4 +49,34 @@ body {
     height: 100%;
     z-index: -1;
     animation: fadein .5s linear;
+}
+
+.js-clock {
+    font-size: 3em;
+    font-weight: Bold;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.js-toDoForm {
+    font-size: 3em;
+    text-align: center;
+}
+
+.js-toDoForm>input[type=text],
+::placeholder {
+    font-size: 30px;
+    color: white;
+    border: none;
+    background: none;
+    border-bottom: 2px solid white;
+}
+
+.js-toDoList {
+    position: absolute;
+    bottom: 150px;
+    left: 43%;
+    font-size: 1.5em;
+    text-align: center;
+    list-style-type: none;
 }
